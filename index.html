@@ -4,21 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" >		
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" >	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">	
+<link rel="stylesheet" href="style.css">
 	<title>inscription</title>
 </head>
 <body>
 		<nav type="navbar" class="navbar navbar-default">
 			<div class="container-fluid">
 				<ul class="navbar navbar-nav navbar-right">
-					<label >Adresse mail ou téléphone</label>
 					<div class="input-group">
+						<label >Adresse mail ou téléphone</label>
 						<input type="text">
 					</div>
-					<label >Mot de passe</label>
 					<div class="input-group">
+						<label >Mot de passe</label>
 						<input type="text">
 					</div>
 					<button>Connexion</button>
@@ -30,10 +32,10 @@
 		<img src="https://www.facebook.com/rsrc.php/v3/yx/r/pyNVUg5EM0j.png">
 		</div>
 		<div class="col-md-6">
-			<form action="http://192.168.1.137" method="POST">
+			<form action="http://0.0.0.0:3000" method="POST">
 				<div class="form-group">
 					<input class="form-control" type="text" id="forname" required="true" value="Prénom">
-					<input class="form-control" type="text" id="name" required="true value="Nom de famille">
+					<input class="form-control" type="text" id="name" required="true" value="Nom de famille">
 				</div>
 				<div class="form-group">
 					<input class="form-control" type="text" id="login" required="true" value="telephone ou email">
@@ -227,5 +229,10 @@
 		</div>	
 
 </body>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="app.js"></script>
 </html>

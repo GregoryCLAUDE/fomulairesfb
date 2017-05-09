@@ -1,0 +1,25 @@
+.navbar-right {
+
+	display :center;
+	display: inline-flex;
+};
+
+.input-group {
+	display: block;
+};
+
+body {
+
+	background: linear-gradient(white, #D3D8E8);
+
+};
+
+nav {
+	background-color: #3b5998;
+    
+    
+};
+
+.img {
+
+}
