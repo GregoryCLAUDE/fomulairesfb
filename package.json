@@ -1,0 +1,29 @@
+{
+  "name": "reffbpg",
+  "version": "1.0.0",
+  "description": "refaire la page d'inscription de fb en formulaire",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0",
+    "jade": "^1.11.0",
+    "nodefs": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregoryCLAUDE/fomulairesfb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregoryCLAUDE/fomulairesfb/issues"
+  },
+  "homepage": "https://github.com/GregoryCLAUDE/fomulairesfb#readme"
+}
