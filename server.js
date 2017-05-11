@@ -2,7 +2,7 @@ var express = require("express");
 var http = require("http").Server(app);
 var app = express();
 
-var jade = require("jade");
+//var jade = require("jade");
 
 var nodefs = require("fs");
 var bodyparser = require("body-parser");
@@ -15,20 +15,20 @@ app.listen(3000, function(){
 app.use(express.static(__dirname+"/"))
 app.use(bodyparser.urlencoded({extend:false}));
 app.use(bodyparser.json());
-app.set("view", "./view");
+app.set("views", "./views");
 app.set("view engine", "jade");
 
 app.post("/clients", function(req, res){
 
-		res.sendFile(__dirname+"/clients.jade");
+		//res.sendFile(__dirname+"/view/clients.jade");
+		res.render("clients", {user : req.body})
 
 });
 
-app.get("/",function (req, res){
+// app.get("/clients",function (req, res){
 
-	res.render("clients", {name : "zoubida", lastname : "zoubiii"})
 
-});
+// });
 
 // function inscription(req,res){
 // 	var data = req.body;
